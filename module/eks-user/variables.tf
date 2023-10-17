@@ -1,6 +1,6 @@
 variable "username" {
   type    = list(any)
-  default = ["developer1", "manager", "mark"]
+  default = []
 }
 
 variable "env" {
@@ -20,5 +20,5 @@ variable "region" {
 }
 variable "groups" {
   type = list(string)
-  default = [ "Developer", "admins" ]
+  default = [ ]
 }
