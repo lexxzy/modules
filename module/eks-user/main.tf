@@ -38,7 +38,7 @@ resource "aws_iam_group_policy" "admins_policy" {
 }
 resource "aws_iam_group_membership" "admin_team" {
   name  = "admin-group-membership"
-  users = [aws_iam_user.eks_user[2].name]
+  users = [aws_iam_user.eks_user[1].name]
   group = aws_iam_group.eks_developer[1].name
 }
 
