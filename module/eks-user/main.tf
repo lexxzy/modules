@@ -25,6 +25,7 @@ resource "aws_iam_group_policy" "developer_policy" {
   name   = "developer"
   group  = aws_iam_group.eks_developer[0].name
   policy = data.aws_iam_policy_document.developer.json
+  depends_on = [aws_iam_group.eks_developer]
 }
 resource "aws_iam_group_membership" "db_team" {
   name  = "dev-group-membership"
