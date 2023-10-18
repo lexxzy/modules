@@ -20,5 +20,5 @@ variable "region" {
 }
 variable "groups" {
   type = list(string)
-  default = [ ]
+  default = []
 }
